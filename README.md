@@ -1,5 +1,8 @@
-- 👋 Hi, I’m @HPhucDev
-- 🔭 I’m currently working on HCMUTE
+
+<h1> Hi there, I'm Hoang Phuc  👋 </h1>
+<h2> I'm a Developer and Student! </h2>
+
+- 🔭 I’m currently working on HCMUTE - HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY AND EDUCATION
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 2021 Goals: Learn as much as js
