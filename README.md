@@ -1,6 +1,6 @@
 
 <h1> Hi there, I'm Hoang Phuc  👋 </h1>
-<h2> I'm a Developer and Student! </h2>
+<h2> I'm a Front End Developer and Student! </h2>
 
 - 🔭 I’m currently working on HCMUTE - HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY AND EDUCATION
 - 🌱 I’m currently learning everything 🤣
