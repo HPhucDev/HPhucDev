@@ -1,22 +1,169 @@
-<h1 align="left">Hi 👋, I'm Phuc Nguyen Hoang</h1>
-<h3 align="left">A passionate frontend developer from Viet Nam</h3>
+> **Deployment Documentation**
 
-- 🔭 I’m currently working on **IDS Software and on HCMUTE - Ho Chi Minh City University of Technology and Education 
+Date : Jun 08, 2023 Author:
 
-- 🌱 I’m currently learning **ReactJS,NextJS,React Native**
+-   Phuc NguyenHoang ( [phuc.nguyenhoang@idsolutions.com.vn]{.underline}
+    )
 
-- 👯 I’m looking to collaborate **with developer on over the world**
+-   Khoa Nguyen ( [khoa.nguyen@idsolutions.com.vn]{.underline} )
 
-- 📫 How to reach me **hoangphucdeveloper@gmail.com**
+-   
 
-- 📄 Know about my experiences [https://bom.so/hICBgj](https://bom.so/hICBgj)
+Here is the documentation to deploy or run with Belga website FO
+project. Please note these info to help you deploy easily:
 
-- ⚡ Fun fact **I love to Code**
+1.  If you work on a new server, please start from \"Step 1: Set up the
+    Server\"
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/hoang-phuc-7a445122b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/hoang-phuc-7a445122b/" height="30" width="40" /></a>
-</p>
+2.  If you want to change the URL setting, please start from \"Step 6:
+    Build and Bundle and start the Nextjs Project\"
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"><a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">  </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer">  </a>   </p>
+**Note: Please ignore these steps if you installed it on your
+environment.**
+
+1.  **Git information:**
+
+Belga Git account:
+
+Account: belga/BelgaIds
+
+Branch: master
+
+2.  **Prerequisites:**
+
+Before proceeding with the deployment, ensure you have the following:
+
+**Step 1**: Set up the Server:
+
+1.  Connect to your server via SSH using a terminal or an SSH client. (
+    we use Termius )
+
+2.  Update the system packages by running the following commands:
+
+sudo apt update
+
+sudo apt list \--upgradable
+
+**Step 2**: Install Git
+
+1.  Install Git by running the following command:
+
+sudo apt install git
+
+2.  Verify the installation by checking the Node.js and npm versions:
+
+git \--version
+
+**Step 3**: Install and Configure NVM, Node.js, npm and yarn
+
+1.  Install NVM by running the following command:
+
+> sudo apt-get install wget
+
+wget -qO-
+https://raw.githubusercontent.com/creationix/nvm/v0.39.0/install.sh \|
+bash source \~/.profile
+
+2.  Verify the installation by checking the nvm versions:
+
+nvm \--version
+
+=\> 0.39.0
+
+3.  Install Node.js with NVM and use node version 16.xx.xx with nvm by
+    running the following command:
+
+nvm install 16 nvm use 16
+
+4.  Verify the installation by checking the Node.js and npm versions:
+
+node --version =\> v16.20.0
+
+npm --version
+
+=\> 9.6.7
+
+5.  Install Yarn with node version 16.20.0 by running the following
+    command:
+
+npm install -global yarn
+
+6.  Verify the installation by checking the Yarn versions:
+
+yarn -v
+
+=\> 1.22.19
+
+**Step 4**: Install PM2
+
+1.  Install PM2 by running the following command:
+
+> sudo npm i -g pm2
+
+2.  Verify the installation by checking the PM2 versions:
+
+pm2 \--version
+
+=\> 5.3.0
+
+**Step 5**: Clone the Nextjs Project
+
+5.1. Change to the desired directory where you want to clone the
+project:
+
+cd /data/ids
+
+5.2.Clone the Nextjs project repository by running the following
+command:
+
+git clone
+[[http://git.idsolutions.com.vn/belga-ai/belga-website-2023-fo.git]{.underline}](http://git.idsolutions.com.vn/belga-ai/belga-website-2023-fo.git)
+
+**Step 6**: Install Project Dependencies 5.1. 6.1 Change to the project
+directory:
+
+cd belga-website-2023-fo/ git checkout phase3
+
+6.2. Install the project dependencies by running the following command:
+
+yarn install
+
+**Step 7**: Build and Bundle and start the Nextjs Project:
+
+You can see '**.env.belga**' files and properties:
+
+NEXT_PUBLIC_API_BASE=http://strapi-belga.staging.belga.be:1337
+
+Please **replace**
+["[http://strapi-belga.staging.belga.be:1337]{.underline}"](http://strapi-belga.staging.belga.be:1337/)
+by the new link, **for example**:
+
+NEXT_PUBLIC_API_BASE= https://strapi-stg.belga.be
+
+7.1.Build the Nextjs project by running the following command:
+
+yarn build:belga
+
+7.2.Start the Nextjs server by running the following command, we will
+use pm2 with version v5.3.0 to deploy (please install pm2 if you haven't
+installed yet):
+
+pm2 start yarn \--name \"belga-website-2023-fo\" \-- start
+
+7.3.List all processes with pm2
+
+pm2 list
+
+Note: please find the process id with the name \"belga-website-2023-fo\"
+that we have on step 2.
+
+7.4.Check logs of process with pm2 from process id that we found on step
+3
+
+pm2 logs \<id the process what you want to check logs\>
+
+7.5.Please monitor the logs file and found the problem.
+
+7.6.If you installed FO with pm2, you should delete it with command:
+
+pm2 delete \<id the process what you want to delete\>
