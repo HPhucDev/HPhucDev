@@ -40,9 +40,11 @@ Before proceeding with the deployment, ensure you have the following:
 
 2.  Update the system packages by running the following commands:
 
+```markdown 
 sudo apt update
 
 sudo apt list \--upgradable
+```
 
 **Step 2**: Install Git
 
