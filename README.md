@@ -1,5 +1,5 @@
 <h1 align="left">Hi 👋, I'm Phuc Nguyen Hoang</h1>
-<h3 align="left">A passionate frontend developer from Viet Nam</h3>
+<h3 align="left">A boy dreams of creating value for others via software products 😴</h3>
 
 - 🔭 I’m currently working on **IDS Software and on HCMUTE - Ho Chi Minh City University of Technology and Education** 
 
