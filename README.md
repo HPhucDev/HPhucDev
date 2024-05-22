@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **hoangphucdeveloper@gmail.com**
 
-- 📄 Know about my experiences [https://bom.so/hICBgj](https://bom.so/hICBgj)
+- 📄 Know about my experiences [https://hoangphuc.lightup.io.vn](https://hoangphuc.lightup.io.vn/)
 
 - ⚡ Fun fact **I love to Code**
 
