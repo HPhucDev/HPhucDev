@@ -1,7 +1,7 @@
 <h1 align="left">Hi 👋, I'm Phuc Nguyen Hoang</h1>
 <h3 align="left">A boy dreams of creating value for others via software products 😴</h3>
 
-- 🔭 I’m currently working on **IDS Software and my Startup ** 
+- 🔭 I’m currently working on **IDS Software and my Startup** 
 
 - 🌱 I’m currently learning **ReactJS,NextJS,React Native**
 
